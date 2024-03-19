@@ -1,0 +1,203 @@
+/* Define estilos padrão para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #050d20;
+    padding-top: 16px;
+    color: white;
+
+}
+
+header>.container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: #4d618d;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    margin-bottom: 4px;
+}
+
+#carrinho {
+    width: 32px;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    border-radius: 4px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+#style-sobre p{
+    margin-top: 16px;
+}
+
+hr{
+    padding: 2px;
+    margin-bottom: 16px;
+    background-color: #4d618d;
+}
+
+.lista-produtos li {
+    list-style: none;
+    max-width: 30%;
+    margin: 0 2%;
+}
+
+.lista-produtos li img {
+    max-width: 100%;
+}
+
+.lista-produtos li h3 {
+    margin: 16px 0;
+}
+
+.lista-produtos li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #4d618d;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.lista-produtos li strong{
+    margin: 16px 0;
+    display: block;
+}
+
+footer{
+    background-color: #050d20;
+    color: white;
+    padding: 16px 0;
+}
+
+#style-footer p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+@media screen and (max-width:767px){
+
+    .container{
+        max-width: 90%;
+        flex-wrap: wrap;
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%;
+        border-radius: 6px;
+        margin-bottom: 32px;
+    }
+    
+    section h2 {
+        margin-bottom: 16px;
+    }
+
+    .lista-produtos li img {
+        max-width: 100%;
+    }
+
+    .lista-produtos{
+        display: block;
+    }
+
+    .lista-produtos li {
+        list-style: none;
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .container{
+        max-width: 90%;
+        flex-wrap: wrap;
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%;
+        border-radius: 6px;
+        margin-bottom: 32px;
+    }
+    
+    section h2 {
+        margin-bottom: 16px;
+    }
+
+    .lista-produtos li img {
+        max-width: 100%;
+    }
+
+    .lista-produtos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .lista-produtos li {
+        list-style: none;
+        max-width: 40%;
+    }
+}
